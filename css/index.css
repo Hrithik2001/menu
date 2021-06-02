@@ -1,0 +1,392 @@
+h1,h2, p.demo,p.demo1{
+  text-align: center;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+ul li a:hover{
+  background-color: red;
+}
+
+.pageone{
+  margin: 10px 0 20px 0 ;
+}
+.pageone::after{
+  clear: both;
+  content: " ";
+  display: table;
+}
+.pageone .container{
+  max-width: 100%;
+  height: auto%;
+}
+
+.container .picone,.pictwo,.picthree {
+  box-sizing: border-box;
+  padding: 1px;
+  position: relative;
+  float: left;
+  max-width: 33%;
+}
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay1{
+  position: absolute;
+  bottom: 100%;
+  background-color: #002635;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.picone:hover .overlay1{
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay2{
+  position: absolute;
+  bottom: 0;
+  background-color: #002635;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.pictwo:hover .overlay2{
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay3{
+  position: absolute;
+  bottom: 100%;
+  background-color: #002635;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.picthree:hover .overlay3{
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.pagetwo{
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  background: radial-gradient(#333,#000);
+}
+.leaf{
+  position: absolute;
+  width: 100%;
+  height:90vh;
+  top: 0;
+  left: 0;
+}
+
+.leaf div{
+  position: absolute;
+  display: block;
+}
+.leaf div:nth-child(1){
+  left: 20%;
+  animation: fall 15s linear infinte;
+  animation-delay:-2s;
+}
+.leaf div:nth-child(2){
+    left:70%;
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%;
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+
+}
+.leaf div:nth-child(4){
+    left:50%;
+   animation:fall 18s linear infinite ;
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%;
+    animation:fall 14s linear infinite ;
+    animation-delay:-9s;
+}
+.leaf div:nth-child(6){
+    left:65%;
+    animation:fall 14s linear infinite ;
+    animation-delay:-11s;
+}
+.leaf div:nth-child(7){
+    right:85%;
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(8){
+    right:55%;
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+    }
+    20%{
+        opacity:0.8;
+
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+
+       transform:translateX (-20px) rotate(135deg);
+    }
+    80%{
+
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+    .leaf1{
+        transform: rotateX(180deg);
+    }
+    h2{
+        position:absolute ;
+        top:40%;
+        width:100%;
+        font-family: 'Courgette', cursive;
+        font-size:4em;
+        text-align:center;
+        transform:translate ;
+        color:#fff;
+        transform:translateY (-50%);
+    }
+.pagetwo::after{
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+.pagethree{
+  background-color: rgb(248, 229, 233);
+  width: 100%;
+}
+/* Cube Design*/
+.background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+.cube {
+  position: absolute;
+  top: 45vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 35vw;
+  top: 30vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 10vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+/*Cube Design End*/
+.pagethree div p.about{
+  margin: 0 10px;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.form div.ipt{
+  padding: 10px 10% 0 15%;
+  z-index: 1;
+}
+
+.form div input{
+ border: 2px solid black;
+ padding: 10px 20px;
+ width: 80%;
+ border-radius: 10px;
+ align-content: center;
+}
+
+.form div button{
+padding: 10px 20px;
+margin: 0 40% 0 35% ;
+border: none;
+border-radius: 5px;
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+}
+
+.form div button:hover{
+  width: 150px;
+  height: 50px;
+}
+@media screen and (max-width: 600px) {
+  ul li{
+    float: none;
+  }
+  .container .picone,.pictwo,.picthree {
+    max-width: 100%;
+    float: none;
+  }
+  .background{
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pagetwo .leaf div img{
+    height: 60px;
+    width: 60px;
+  }
+  .background{
+    height: 110vh;
+  }
+  p.demo1{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .background{
+    height: 35vh;
+  }
+
+}
+
+footer{
+border-color: dodgerblue;
+color: green;
+}
+footer hr{
+  opacity: 0.5;
+}
